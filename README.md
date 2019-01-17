@@ -205,3 +205,15 @@ then answer is a1,a2,a3,b1,c1.
 HENCE ANSWER is 7 RACES
 
 Please note that the 7 races work for the case also when all top 3 horses are same group or any top two horses are in same group. The group which has top 3 horses would always have winner in 6th race. In 7th race, we consider 2nd and 3rd horses of the group whose horse is overall winner. We also consider 2nd horse of the group whose horse came 2nd in 6th race.
+
+## Puzzle 10 | (A Man with Medical Condition and 2 Pills)
+
+A man has a medical condition that requires him to take two kinds of pills, call them A and B. The man must take exactly one A pill and exactly one B pill each day, or he will die. The pills are taken by first dissolving them in water.
+The man has a jar of A pills and a jar of B pills. One day, as he is about to take his pills, he takes out one A pill from the A jar and puts it in a glass of water. Then he accidentally takes out two B pills from the B jar and puts them in the water. Now, he is in the situation of having a glass of water with three dissolved pills, one A pill and two B pills. Unfortunately, the pills are very expensive, so the thought of throwing out the water with the 3 pills and starting over is out of the question. How should the man proceed in order to get the right quantity of A and B while not wasting any pills?
+
+Solution:
+Add one more A pill to the glass and let it dissolve. Take half of the water today and half tomorrow. It works under following assumptions.
+
+The dissolved Pills can be used next day.
+
+The man has to take pills at least for one more day.
