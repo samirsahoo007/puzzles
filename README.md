@@ -65,3 +65,18 @@ So we have two possible combination to get sum 14
 3 + 3 + 8 = 14
 
 3) Alok has an oldest girl (not two!!). So the ages must be 3, 3 and 8.
+
+## Puzzle 3 | (Calculate total distance travelled by bee)
+
+Two trains are on same track and they are coming toward each other. The speed of first train is 50 KMs/h and the speed of second train is 70 KMs/h. A bee starts flying between the trains when the distance between two trains is 100 KMs. The bee first flies from first train to second train. Once it reaches the second train, it immediately flies back to the second train... and so on until trains collide. Calculate the total distance traveled by the bee. Speed of bee is 80 KMs/h.
+
+Solution:
+Let the first train moves at u km/h
+second train moves at v km/h
+
+distance betweem trains be d km
+speed of bee is b km/h
+
+time taken by trains to collide,t = d/(u+v)
+
+distance travelled by bee in time t = b*t = 80 * (100/(50+70)) = 66.67(approx.)
