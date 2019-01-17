@@ -350,3 +350,64 @@ picks 14, now the other player can only pick a coin
 (10 or 18). Whichever is picked the other player,
 the first player again gets an opportunity to pick
 an even coin and block all even coins.
+
+## Puzzle 15 | (Camel and Banana Puzzle)
+
+A person has 3000 bananas and a camel. The person wants to transport maximum number of bananas to a destination which is 1000 KMs away, using only the camel as a mode of transportation. The camel cannot carry more than 1000 bananas at a time and eats a banana every km it travels. What is the maximum number of bananas that can be transferred to the destination using only camel (no other mode of transportation is allowed).
+
+Solution:
+The solution: 533 1/3 bananas. https://puzzle.dse.nl/math/bananas_us.html
+
+Explanation: since there are 3000 bananas and the camel can carry at most 1000 bananas, at least five trips are needed to carry away all bananas from the plantation P (3 trips away from the plantation and 2 return trips):
+
+ 
+ 
+P (plantation)
+ 
+ 	===forth===>
+<===back====
+===forth===>
+<===back====
+===forth===>	 
+ 
+A
+ 
+ 
+Point A in the above picture cannot be the market. This is because the camel can never travel more than 500 kilometers into the desert if it should return to the plantation (the camel eats a banana every kilometer it travels!). So point A lies somewhere in the desert between the plantation and the market. From point A to the next point, less than five trips must be used to transport the bananas to that next point. We arrive at the following global solution to the problem (P denotes the plantation, M denotes the market):
+
+ 
+ 
+P (plantation)
+ 
+ 	===forth===>
+<===back====
+===forth===>
+<===back====
+===forth===>	 
+ 
+A
+ 
+ 	 
+===forth===>
+<===back====
+===forth===>
+ 	 
+ 
+B
+ 
+ 	 
+ 
+===forth===>
+ 
+ 	 
+ 
+M (market)
+ 
+ 
+Note that section PA must be in the solution (as explained above), but section AB or section BM might have a length of 0. Let us now look at the costs of each part of the route. One kilometer on section PA costs 5 bananas. One kilometer on section AB costs 3 bananas. One kilometer on section BM costs 1 banana. To save bananas, we should make sure that the length of PA is less than the length of AB and that the length of AB is less than the length of BM. Since PA is greater than 0, we conclude that AB is greater than 0 and that BM is greater than 0.
+
+The camel can carry away at most 2000 bananas from point A. This means the distance between P and A must be chosen such that exactly 2000 bananas arrive in point A. When PA would be chosen smaller, more than 2000 bananas would arrive in A, but the surplus cannot be transported further. When PA would be chosen larger, we are losing more bananas to the camel than necessary. Now we can calculate the length of PA: 3000-5*PA=2000, so PA=200 kilometers. Note that this distance is less than 500 kilometers, so the camel can travel back from A to P.
+
+The situation in point B is similar to that in point A. The camel cannot transport more than 1000 bananas from point B to the market M. Therefore, the distance between A and B must be chosen such that exactly 1000 bananas arrive in point B. Now we can calculate the length of AB: 2000-3*AB=1000, so AB=333 1/3. Note that this distance is less than 500 kilometers, so the camel can travel back from B to A. It follows that BM=1000-200-333 1/3=466 2/3 kilometers. As a result, the camel arrives at the market with 1000-466 2/3=533 1/3 bananas.
+
+The full scenario looks as follows: first, the camel takes 1000 bananas to point A. There it drops 600 bananas and returns with 200 bananas. Then the camel takes again 1000 bananas to point A. Again, it drops 600 bananas and returns with 200 bananas. After this, the camel takes the last 1000 bananas from the plantation to point A. From point A, it leaves with 1000 bananas to point B. In point B, it drops 333 1/3 bananas and returns with 333 1/3 bananas. Then it takes the second load of 1000 bananas from point A to point B. Finally, it carries the 1000 bananas from point B to the market, where it arrives with 533 1/3 bananas.
