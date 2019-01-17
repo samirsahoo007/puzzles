@@ -411,3 +411,6 @@ The camel can carry away at most 2000 bananas from point A. This means the dista
 The situation in point B is similar to that in point A. The camel cannot transport more than 1000 bananas from point B to the market M. Therefore, the distance between A and B must be chosen such that exactly 1000 bananas arrive in point B. Now we can calculate the length of AB: 2000-3*AB=1000, so AB=333 1/3. Note that this distance is less than 500 kilometers, so the camel can travel back from B to A. It follows that BM=1000-200-333 1/3=466 2/3 kilometers. As a result, the camel arrives at the market with 1000-466 2/3=533 1/3 bananas.
 
 The full scenario looks as follows: first, the camel takes 1000 bananas to point A. There it drops 600 bananas and returns with 200 bananas. Then the camel takes again 1000 bananas to point A. Again, it drops 600 bananas and returns with 200 bananas. After this, the camel takes the last 1000 bananas from the plantation to point A. From point A, it leaves with 1000 bananas to point B. In point B, it drops 333 1/3 bananas and returns with 333 1/3 bananas. Then it takes the second load of 1000 bananas from point A to point B. Finally, it carries the 1000 bananas from point B to the market, where it arrives with 533 1/3 bananas.
+
+
+https://www.geeksforgeeks.org/puzzle-16-100-doors/
