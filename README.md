@@ -134,3 +134,16 @@ Source: http://en.wikipedia.org/wiki/Monty_Hall_problem
 
 Solution:
 If you switch, you get the car with probability 2/3. So switching is always a good choice. Refer this(https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/lecture-18-probability-introduction/) MIT video lecture for great explanation. Refer online editable Monty hall simulation(http://www.simulateanything.com/simulation?id=monty_hall&v=20#) to play with how things change with multiple doors, prizes etc.
+
+## Puzzle 7 | (3 Bulbs and 3 Switches)
+
+There is a room with a door (closed) and three light bulbs. Outside the room there are three switches, connected to the bulbs. You may manipulate the switches as you wish, but once you open the door you can’t change them. Identify each switch with its bulb.
+
+Solution:
+Let the bulbs be X, Y and Z
+
+Turn on switch X for 5 to 10 minutes. Turn it off and turn on switch Y. Open the door and touch the light bulb.
+
+1. if the light is on, it is Y
+2. if the light is off and hot, it is X
+3. if the light is off and cold, it is Z
