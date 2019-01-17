@@ -123,3 +123,14 @@ Example: Let us say the barrel is numbered 11201. The wine in this barrel is tak
 So if the slave numbered 10000, 1000 and 1 die within first 24 hours, slave numbered 100 dies in the next 24 hours and the slave numbered 10 does not die, then the poisoned barrel has to be 11201.
 
 This way total number possible is 3 * 3 * 3 * 3 * 3 = 3^5 = 243 barrels!! So with the help of 5 slaves and within 48 hours we will be able to find a poisoned barrel among 243 barrels.
+
+## Puzzle 6 | (Monty Hall problem)
+
+Suppose you’re on a game show, and you’re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what’s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, “Do you want to pick door No. 2?” Is it to your advantage to switch your choice?
+
+https://cdncontribute.geeksforgeeks.org/wp-content/uploads/MontyHall.png
+
+Source: http://en.wikipedia.org/wiki/Monty_Hall_problem
+
+Solution:
+If you switch, you get the car with probability 2/3. So switching is always a good choice. Refer this(https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/lecture-18-probability-introduction/) MIT video lecture for great explanation. Refer online editable Monty hall simulation(http://www.simulateanything.com/simulation?id=monty_hall&v=20#) to play with how things change with multiple doors, prizes etc.
