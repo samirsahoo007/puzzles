@@ -312,3 +312,41 @@ b) If 99’th prisoner sees odd number of red hats in front of him, then his col
 The 98’th prisoner decides his answer on the basis of answer of 99’th prisoner’s answer and uses same logic.
 
 Similarly other prisoners from 97 to 1 are saved.
+
+## Puzzle 14 | (Strategy for a 2 Player Coin Game)
+
+Consider a two player coin game where each player gets turn one by one. There is a row of even number of coins, and a player on his/her turn can pick a coin from any of the two corners of the row. The player that collects coins with more value wins the game. Develop a strategy for the player making the first turn, such he/she never looses the game.
+
+Note that the strategy to pick maximum of two corners may not work. In the following example, first player looses the game when he/she uses strategy to pick maximum of two corners.
+
+Example
+  18 20 15 30 10 14
+First Player picks 18, now row of coins is
+  20 15 30 10 14
+Second player picks 20, now row of coins is
+  15 30 10 14
+First Player picks 15, now row of coins is
+  30 10 14
+Second player picks 30, now row of coins is
+  10 14
+First Player picks 14, now row of coins is
+  10 
+Second player picks 10, game over.
+
+The total value collected by second player is more (20 + 
+30 + 10) compared to first player (18 + 15 + 14).
+So the second player wins. 
+
+Solution:
+The idea is to count sum of values of all even coins and odd coins, compare the two values. The player that makes the first move can always make sure that the other player is never able to choose an even coin if sum of even coins is higher. Similarly, he/she can make sure that the other player is never able to choose an odd coin if sum of odd coins is higher.
+
+Example
+18 20 15 30 10 14
+Sum of odd coins = 18 + 15 + 10 = 43
+Sum of even coins = 20 + 30 + 14 = 64.
+Since the sum of even coins is more, the first
+player decides to collect all even coins. He first
+picks 14, now the other player can only pick a coin
+(10 or 18). Whichever is picked the other player,
+the first player again gets an opportunity to pick
+an even coin and block all even coins.
