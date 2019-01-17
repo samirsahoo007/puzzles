@@ -217,3 +217,58 @@ Add one more A pill to the glass and let it dissolve. Take half of the water tod
 The dissolved Pills can be used next day.
 
 The man has to take pills at least for one more day.
+
+## Puzzle 11 | (1000 Coins and 10 Bags)
+
+A dealer has 1000 coins and 10 bags. He has to divide the coins over the ten bags, so that he can make any number of coins simply by handing over a few bags. How must divide his money into the ten bags?
+
+Solution:
+We can represent any decimal number as weights of binary system. For example, if we want to measure upto 7, first three bags are sufficient.
+
+1 = 2^0
+
+2 = 2^1
+
+3 = 2^0 + 2^1
+
+4 = 2^2
+
+5 = 2^2 + 2^0
+
+6 = 2^2 + 2^1
+
+7 = 2^2 + 2^1 + 2^0
+
+It can be easily generalized. We can measure upto 2^n – 1.
+
+Fun is, we can also measure the same using powers of 3. For example, we have bags with 1, 3 and 9 coins,
+
+1 = 1
+
+2 = 3-1
+
+3 = 3
+
+4 = 3+1
+
+5 = 9-3-1
+
+6 = 9-3
+
+7 = 9+1-3
+
+8 = 9 -1
+
+9 = 9
+
+10 = 9+1
+
+11 = 9+3-1
+
+12 = 9+3
+
+13 = 9+3+1
+
+From 14 onwards next bag comes into picture.
+
+Factorization algorithms other than powers of 2 are costly on computer systems. Please share any other information. Any person working on cryptography can share more details.
