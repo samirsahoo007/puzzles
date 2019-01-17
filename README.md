@@ -95,3 +95,31 @@ Employer can pay for seven days by making 2 cuts in a way that he has 3 rods of 
 5th Day: Gives cut of 1 unit.
 6th Day: Takes back cut of 1 unit and gives cut of 2 units.
 7th Day: Gives cut of 1 unit.
+
+## Puzzle 5 | (Finding the poisoned wine)
+
+You have 240 barrels of wine, one of which has been poisoned. After drinking the poisoned wine, one dies exactly 24 hours. You have 5 slaves whom you are willing to sacrifice in order to determine which barrel contains the poisoned wine. How do you achieve this in 48 hours?
+
+Let us number the barrels with 5 digit numbers consisting of 0, 1 and 2. Let us number the slaves as 1, 10, 100, 1000, 10000.
+
+Number 0 on a barrel represents the wine in the barrel will not be taken by the slave.
+
+Number 1 on a barrel represents the wine in the barrel will taken by the slave on 1st day.
+
+Number 2 on a barrel represents the wine in the barrel will be taken by the slave on 2nd day(after 24 hours).
+
+The action corresponding to the digit in the unit place will be executed by slave numbered 1.
+
+The action corresponding to the digit in the tenth place will be executed by slave numbered 10.
+
+The action corresponding to the digit in the 100th place will be executed by slave numbered 100.
+
+The action corresponding to the digit in the 1000th place will be executed by slave numbered 1000.
+
+The action corresponding to the digit in the 10000th place will be executed by slave numbered 10000.
+
+Example: Let us say the barrel is numbered 11201. The wine in this barrel is taken on the first day by the slave numbered 10000, 1000 and 1. It is taken on the second day by slave numbered 100. And it is not taken by the slave numbered 10.
+
+So if the slave numbered 10000, 1000 and 1 die within first 24 hours, slave numbered 100 dies in the next 24 hours and the slave numbered 10 does not die, then the poisoned barrel has to be 11201.
+
+This way total number possible is 3 * 3 * 3 * 3 * 3 = 3^5 = 243 barrels!! So with the help of 5 slaves and within 48 hours we will be able to find a poisoned barrel among 243 barrels.
